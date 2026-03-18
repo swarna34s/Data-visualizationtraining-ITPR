@@ -1,14 +1,132 @@
-# Electricity Bill Calculator
-
-units = float(input("Enter number of units consumed: "))
-
-if units <= 100:
-    bill = units * 1.5
-elif units <= 200:
-    bill = (100 * 1.5) + (units - 100) * 2.5
-elif units <= 300:
-    bill = (100 * 1.5) + (100 * 2.5) + (units - 200) * 4
-else:
-    bill = (100 * 1.5) + (100 * 2.5) + (100 * 4) + (units - 300) * 6
-
-print("Total Electricity Bill: ₹", bill)
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMxfTsagNsykdrMfmOLDS4H",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/swarna34s/Data-visualizationtraining-ITPR/blob/main/class%20work\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "fbl9dcHhQGhC"
+      },
+      "outputs": [],
+      "source": [
+        "#voting eligibility\n",
+        "\n",
+        "age= int int(input(\"enter age:\"))\n",
+        "if age>=18:\n",
+        "  print(\"eligible\")\n",
+        "else:\n",
+        "  print(\"not eligible\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#discount calculator\n",
+        "price=float(input(\"enter price:\"))\n",
+        "discount= float(input(\"enter discount percentage:\"))\n",
+        "final_price= price-(price*discount/100)\n",
+        "print(\"final price:\",final_price)"
+      ],
+      "metadata": {
+        "id": "DRnUGsSISLKZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# simple interest function\n",
+        "def simple_interest(p,r,t):\n",
+        "  return(p*r*t)/100\n",
+        "p= float(input(\"enter principal:\"))\n",
+        "r= float(input(\"enter rate:\"))\n",
+        "t= float(input(\"enter time:\"))\n",
+        "print(\"simple interest:\",simple_interest(p,r,t))"
+      ],
+      "metadata": {
+        "id": "9HiGojYXSPU4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# electricity bill\n",
+        "units= int(input(\"enter units:\"))\n",
+        "if unit<=100:\n",
+        "  bill= units*5\n",
+        "elif units<=200:\n",
+        "  bill=100*5 + (units-100)*7\n",
+        "else:\n",
+        "  bill=100*5 +100*7+(units-200)*10\n",
+        "  print(\"total bill =\",bill)"
+      ],
+      "metadata": {
+        "id": "c57GQ5skV5Rm"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#even number\n",
+        "n=int(input(\"enter N:\"))\n",
+        "\n",
+        "for i in range(2,n+1,2):\n",
+        "  print(i,end=\" \")"
+      ],
+      "metadata": {
+        "id": "hxGVq20za0t4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#  simple interest function\n",
+        "def simple_interest(p,r,t):\n",
+        "  si=(p*r*t)/100\n",
+        "  return si\n",
+        "p= float(input(\"enter pricipal:\"))\n",
+        "r= float(input(\"enter R:\"))\n",
+        "T= float(input(\"enter T:\"))\n",
+        "\n",
+        "print(\"simple interest:\",simple_interest(p,r,t))"
+      ],
+      "metadata": {
+        "id": "EPVf71jJbqV5"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
