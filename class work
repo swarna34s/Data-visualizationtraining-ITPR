@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMxfTsagNsykdrMfmOLDS4H",
+      "authorship_tag": "ABX9TyNEWsjG1a23ukaXdRdyxEyh",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -124,6 +124,19 @@
       ],
       "metadata": {
         "id": "EPVf71jJbqV5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#voting\n",
+        "age= int(input(\"enter age:\"))\n",
+        "print(\"eligible\" if age>=18 else \"not eligible\")"
+      ],
+      "metadata": {
+        "id": "bEtBJtFyhQ3a"
       },
       "execution_count": null,
       "outputs": []
