@@ -1,0 +1,24 @@
+# function to add two number
+def add(a,b):
+   return (a+b)
+
+------------------------
+#function to subtract two numbers
+def subtract(a,b):
+return (a-b)
+_---------------------------
+#to multiply two numbers
+def multiply(a,b):
+return a*b
+--------------------------------
+# function to divide two numbers
+def divide(a,b):
+if b==0:
+  return"error!division by zero."
+return a/b
+----------------------------
+# function to power of a number
+def power(a,b):
+   return a**b
+-----------------------------
+ 
