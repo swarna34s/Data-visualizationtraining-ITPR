@@ -1,0 +1,22 @@
+def is_palindrome(value):
+    # Convert to string to handle both numbers and text
+    value = str(value)
+    
+    reversed_value = ""
+    
+    # Use loop to reverse the string
+    for char in value:
+        reversed_value = char + reversed_value
+    
+    # Check palindrome using if-else
+    if value == reversed_value:
+        print(f"{value} is a Palindrome")
+    else:
+        print(f"{value} is NOT a Palindrome")
+
+
+# Take input from user
+user_input = input("Enter a number or string: ")
+
+# Call the function
+is_palindrome(user_input)
