@@ -1,0 +1,93 @@
+# main.py
+import shapes
+
+def main():
+    while True:
+        print("\nSelect a 3D figure:")
+        print("1. Cube")
+        print("2. Cuboid")
+        print("3. Cylinder")
+        print("4. Cone")
+        print("5. Sphere")
+        print("6. Hemisphere")
+        print("0. Exit")
+        choice = input("Enter your choice: ")
+
+        if choice == "0":
+            print("Exiting program.")
+            break
+
+        # Ask for operation
+        print("\nSelect operation:")
+        print("1. Curved Surface Area")
+        print("2. Total Surface Area")
+        print("3. Volume")
+        op = input("Enter your choice: ")
+
+        # Cube
+        if choice == "1":
+            a = float(input("Enter side length: "))
+            if op == "1":
+                print("Curved Surface Area:", shapes.cube_curved_surface_area(a))
+            elif op == "2":
+                print("Total Surface Area:", shapes.cube_total_surface_area(a))
+            elif op == "3":
+                print("Volume:", shapes.cube_volume(a))
+
+        # Cuboid
+        elif choice == "2":
+            l = float(input("Enter length: "))
+            b = float(input("Enter breadth: "))
+            h = float(input("Enter height: "))
+            if op == "1":
+                print("Curved Surface Area:", shapes.cuboid_curved_surface_area(l, b, h))
+            elif op == "2":
+                print("Total Surface Area:", shapes.cuboid_total_surface_area(l, b, h))
+            elif op == "3":
+                print("Volume:", shapes.cuboid_volume(l, b, h))
+
+        # Cylinder
+        elif choice == "3":
+            r = float(input("Enter radius: "))
+            h = float(input("Enter height: "))
+            if op == "1":
+                print("Curved Surface Area:", shapes.cylinder_curved_surface_area(r, h))
+            elif op == "2":
+                print("Total Surface Area:", shapes.cylinder_total_surface_area(r, h))
+            elif op == "3":
+                print("Volume:", shapes.cylinder_volume(r, h))
+
+        # Cone
+        elif choice == "4":
+            r = float(input("Enter radius: "))
+            h = float(input("Enter height: "))
+            if op == "1":
+                print("Curved Surface Area:", shapes.cone_curved_surface_area(r, h))
+            elif op == "2":
+                print("Total Surface Area:", shapes.cone_total_surface_area(r, h))
+            elif op == "3":
+                print("Volume:", shapes.cone_volume(r, h))
+
+        # Sphere
+        elif choice == "5":
+            r = float(input("Enter radius: "))
+            if op == "1":
+                print("Curved Surface Area:", shapes.sphere_curved_surface_area(r))
+            elif op == "2":
+                print("Total Surface Area:", shapes.sphere_total_surface_area(r))
+            elif op == "3":
+                print("Volume:", shapes.sphere_volume(r))
+
+        # Hemisphere
+        elif choice == "6":
+            r = float(input("Enter radius: "))
+            if op == "1":
+                print("Curved Surface Area:", shapes.hemisphere_curved_surface_area(r))
+            elif op == "2":
+                print("Total Surface Area:", shapes.hemisphere_total_surface_area(r))
+            elif op == "3":
+                print("Volume:", shapes.hemisphere_volume(r))
+
+        else:
+            print("Invalid choice!")
+
