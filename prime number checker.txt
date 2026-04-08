@@ -1,0 +1,20 @@
+def is_primeNo(num):
+    if num <= 1:
+        return False
+    
+    # Check divisibility using for loop
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    
+    return True
+
+
+# Take input from user
+number = int(input("Enter a number: "))
+
+# Use if-else to display result
+if is_primeNo(number):
+    print(f"{number} is a Prime Number")
+else:
+    print(f"{number} is NOT a Prime Number")
