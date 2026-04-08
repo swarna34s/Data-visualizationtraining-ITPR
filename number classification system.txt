@@ -1,0 +1,31 @@
+def classify_number(num):
+    # Check Positive / Negative / Zero
+    if num > 0:
+        print(f"{num} is Positive")
+        
+        # Nested if for Even / Odd
+        if num % 2 == 0:
+            print(f"{num} is Even")
+        else:
+            print(f"{num} is Odd")
+            
+    elif num < 0:
+        print(f"{num} is Negative")
+        
+        # Nested if for Even / Odd
+        if num % 2 == 0:
+            print(f"{num} is Even")
+        else:
+            print(f"{num} is Odd")
+            
+    else:
+        print(f"{num} is Zero")
+
+
+# List of numbers
+numbers = [10, -5, 0, 7, -8]
+
+# Loop to process all numbers
+for num in numbers:
+    classify_number(num)
+    print("-----")
