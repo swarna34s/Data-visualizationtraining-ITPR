@@ -1,0 +1,7 @@
+# List to Tuple Program
+
+lst = list(map(int, input("Enter elements: ").split()))
+
+tup = tuple(lst)
+
+print(tup)
