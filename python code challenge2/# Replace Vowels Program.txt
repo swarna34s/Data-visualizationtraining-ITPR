@@ -1,0 +1,12 @@
+# Replace Vowels Program
+
+s = input("Enter string: ")
+result = ""
+
+for ch in s:
+    if ch.lower() in ['a', 'e', 'i', 'o', 'u']:
+        result += "*"
+    else:
+        result += ch
+
+print(result)
