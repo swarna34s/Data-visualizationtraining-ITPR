@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyM0Ake2P+2vMzg3WNQ+oCh1",
+      "authorship_tag": "ABX9TyN38je9+YFe1zueAy1mz/oB",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -39,6 +39,24 @@
         "bonus= salary*0.07\n",
         "print(\"bonus=\",bonus)"
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# age classification program\n",
+        "age= int(input(\"enter age:\"))\n",
+        "if age<18:\n",
+        "  print(\"minor\")\n",
+        "elif age<60:\n",
+        "  print(\"adult\")\n",
+        "else:\n",
+        "  print(\"senior\")"
+      ],
+      "metadata": {
+        "id": "A7D_ZVhdYDe-"
+      },
+      "execution_count": null,
+      "outputs": []
     }
   ]
 }
