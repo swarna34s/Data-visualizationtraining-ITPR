@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyN38je9+YFe1zueAy1mz/oB",
+      "authorship_tag": "ABX9TyO0h6riHQoRl38YWFULPYLg",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -54,6 +54,22 @@
       ],
       "metadata": {
         "id": "A7D_ZVhdYDe-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# check divisibility by 3 and 5\n",
+        "num= int(input(\"enter number:\"))\n",
+        "if num%3==0 and num%5==0:\n",
+        "  print(\"yes\")\n",
+        "else:\n",
+        "  print(\"no\")"
+      ],
+      "metadata": {
+        "id": "hVVYWG2yYxeN"
       },
       "execution_count": null,
       "outputs": []
