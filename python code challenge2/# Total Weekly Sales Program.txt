@@ -1,0 +1,7 @@
+# Total Weekly Sales Program
+
+sales = list(map(int, input("Enter 7 days sales separated by space: ").split()))
+
+total = sum(sales)
+
+print("Total Sales =", total)
