@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMFTs56AebdyYP7//z/j/Ay",
+      "authorship_tag": "ABX9TyNdKMqMFfJat1nInnamFf0N",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -30,16 +30,18 @@
       "cell_type": "code",
       "execution_count": null,
       "metadata": {
-        "id": "bT62aRMaekLr"
+        "id": "y51zEMhfh5ym"
       },
       "outputs": [],
       "source": [
-        "# vowel check program\n",
-        "ch= input(\"enter a character:\")\n",
-        "if ch.lower()in['a','e','i','o','u']:\n",
-        "  print(\"vowel\")\n",
+        "# ticket price program\n",
+        "\n",
+        "day= input(\"enter day:\")\n",
+        "\n",
+        "if day.lower ()==\"sunday\":\n",
+        "  print(\"200\")\n",
         "else:\n",
-        "  print(\"not a vowel\")"
+        "  print(\"150\")"
       ]
     }
   ]
