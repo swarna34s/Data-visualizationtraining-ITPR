@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyP0vLpGwaY7DYfJqfiuP+f/",
+      "authorship_tag": "ABX9TyMFTs56AebdyYP7//z/j/Ay",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -30,88 +30,17 @@
       "cell_type": "code",
       "execution_count": null,
       "metadata": {
-        "id": "BdPuHZAAVxfm"
+        "id": "bT62aRMaekLr"
       },
       "outputs": [],
       "source": [
-        "# bonus calculation\n",
-        "salary= float(input(\"enter salary:\"))\n",
-        "bonus= salary*0.07\n",
-        "print(\"bonus=\",bonus)"
+        "# vowel check program\n",
+        "ch= input(\"enter a character:\")\n",
+        "if ch.lower()in['a','e','i','o','u']:\n",
+        "  print(\"vowel\")\n",
+        "else:\n",
+        "  print(\"not a vowel\")"
       ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# age classification program\n",
-        "age= int(input(\"enter age:\"))\n",
-        "if age<18:\n",
-        "  print(\"minor\")\n",
-        "elif age<60:\n",
-        "  print(\"adult\")\n",
-        "else:\n",
-        "  print(\"senior\")"
-      ],
-      "metadata": {
-        "id": "A7D_ZVhdYDe-"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# check divisibility by 3 and 5\n",
-        "num= int(input(\"enter number:\"))\n",
-        "if num%3==0 and num%5==0:\n",
-        "  print(\"yes\")\n",
-        "else:\n",
-        "  print(\"no\")"
-      ],
-      "metadata": {
-        "id": "hVVYWG2yYxeN"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# login validation program\n",
-        "username= input(\"enter username:\")\n",
-        "password= input(\"enter password:\")\n",
-        "\n",
-        "if username==\"admin\"and passwrd==\"1234\":\n",
-        "  print(\"login sucessful\")\n",
-        "else:\n",
-        "  print(\"invalid ceredential\")"
-      ],
-      "metadata": {
-        "id": "-BHYOMeoZnEI"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# find largest among three numbers\n",
-        "a= int(input(\"enter first number:\"))\n",
-        "b= int(input(\"enter second number:\"))\n",
-        "c= int(input(\"enter third number:\"))\n",
-        "\n",
-        "if a>=b and a>=c:\n",
-        "  print(\"largest=\",a)\n",
-        "elif b>=a and b>=c:\n",
-        "  print(\"largest=\",b)\n",
-        "else:\n",
-        "  print(\"largest=\",c)"
-      ],
-      "metadata": {
-        "id": "UsBO1lkca6ti"
-      },
-      "execution_count": null,
-      "outputs": []
     }
   ]
 }
