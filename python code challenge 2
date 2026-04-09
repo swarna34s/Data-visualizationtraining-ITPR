@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOVHFDhkNnSWdTo8RQfnDwm",
+      "authorship_tag": "ABX9TyP0vLpGwaY7DYfJqfiuP+f/",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -88,6 +88,27 @@
       ],
       "metadata": {
         "id": "-BHYOMeoZnEI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# find largest among three numbers\n",
+        "a= int(input(\"enter first number:\"))\n",
+        "b= int(input(\"enter second number:\"))\n",
+        "c= int(input(\"enter third number:\"))\n",
+        "\n",
+        "if a>=b and a>=c:\n",
+        "  print(\"largest=\",a)\n",
+        "elif b>=a and b>=c:\n",
+        "  print(\"largest=\",b)\n",
+        "else:\n",
+        "  print(\"largest=\",c)"
+      ],
+      "metadata": {
+        "id": "UsBO1lkca6ti"
       },
       "execution_count": null,
       "outputs": []
