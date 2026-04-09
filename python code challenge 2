@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyO0h6riHQoRl38YWFULPYLg",
+      "authorship_tag": "ABX9TyOVHFDhkNnSWdTo8RQfnDwm",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -70,6 +70,24 @@
       ],
       "metadata": {
         "id": "hVVYWG2yYxeN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# login validation program\n",
+        "username= input(\"enter username:\")\n",
+        "password= input(\"enter password:\")\n",
+        "\n",
+        "if username==\"admin\"and passwrd==\"1234\":\n",
+        "  print(\"login sucessful\")\n",
+        "else:\n",
+        "  print(\"invalid ceredential\")"
+      ],
+      "metadata": {
+        "id": "-BHYOMeoZnEI"
       },
       "execution_count": null,
       "outputs": []
