@@ -1,0 +1,8 @@
+# Intersection of Sets Program
+
+set1 = set(map(int, input("Enter set1: ").split()))
+set2 = set(map(int, input("Enter set2: ").split()))
+
+inter_set = set1 & set2
+
+print(inter_set)
